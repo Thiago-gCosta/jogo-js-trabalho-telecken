@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo procedural JS</title>
+</head>
+<body>
+    <audio src="botao.mp3"></audio>
+    <p class="tempo" id="tempo"></p>
+    <p id="titulo"><img src="logo.jpg" alt=""></p>
+    <input type="button" id="jogar" value="Play" onclick="Geracao(),setInterval(horarioAtual, 1000)">
+    <div class="fundo" id="fundo">
+        <p id="p1" class="p1"></p>
+        <p class="en" id="en"></p>
+        <p class="colect" id="colect"></p>
+        <p id="mapa"></p>
+        <div class="botoes" id="botoes">
+        <input type="button" value="->" id="right" class="right" onclick="Move(+1, 0)">
+        <input type="button" value="<-" id="left" class="left" onclick="Move(-1, 0)">
+        <input type="button" value="^" id="up" class="up" onclick="Move(0, -1)">
+        <input type="button" value="v" id="down" class="down" onclick="Move(0, +1)">
+        </div>
+    </div>
+    <p class="gameOver" id="gameOver">Game Over</p>
+    <p class="gameWin" id="gameWin">You Win!!!</p>
+    <script src="script.js"></script>
+</body>
+</html>

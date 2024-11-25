@@ -1,0 +1,122 @@
+html{
+    background: rgba(0, 0, 0, 0.993);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow:hidden
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.p1{
+    visibility:hidden;
+    background-image: url("magrao.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    left:0vw;
+    top: 0vw;
+    transition: all 0.3s;
+}
+.tempo{
+    text-align: center;
+    font-size: larger;
+}
+.en{
+    visibility:hidden;
+    background-image: url("magraoE.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    left:0vw;
+    top: 0vw;
+    transition: all 1s;
+}
+#colect{
+    position:absolute;
+    width: 5vw;
+    height: 5vh;
+}
+#mapa{
+    white-space: pre-line;
+}
+#titulo{
+    padding-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    color: rgba(255,255,255)
+}
+img{
+    max-width: 50%;
+    max-height: 50%;
+}
+input#jogar{
+    position: absolute;
+    left: 40%;
+    width: 20%;
+    top: 70%;
+    transition: all 1s;
+}
+#jogar:hover{
+    transform: scale(110%);
+    border-radius: 20px;
+    
+}
+.cenario{
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: black;
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    z-index: -1;
+    transition: all 1s;
+}
+input{
+    background: rgba(128, 128, 128, 0.541);
+    width: 100px;
+    height: 70px;
+}
+.botoes{
+    visibility:hidden;
+}
+input.right{
+    position: absolute;
+    left:200px;
+    top:80%;
+}
+input.left{
+    position: absolute;
+    left:0%;
+    top: 80%;
+}
+input.up{
+    position: absolute;
+    left:100px;
+    top: 70%;
+}
+input.down{
+    position: absolute;
+    left:100px;
+    top: 80%;
+}
+#gameOver{
+    visibility: hidden;
+    text-align: center;
+    font-size: 50px;
+    color: antiquewhite;
+}
+#gameWin{
+    visibility: hidden;
+    text-align: center;
+    font-size: 50px;
+    color: antiquewhite;
+}
